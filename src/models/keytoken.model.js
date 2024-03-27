@@ -17,6 +17,11 @@ var keytokenSchema = new Schema({
         required: true,
 
     },
+    publicKey: {
+        type: String,
+        required: true,
+
+    },
     refeshToken: {
         type: Array,
         default: []
