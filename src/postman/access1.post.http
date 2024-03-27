@@ -1,0 +1,12 @@
+@url_dev=http://127.0.0.1:3052/v1/api/
+
+## signup
+# POST  {{url_dev}}shop/signup
+POST http://127.0.0.1:3052/v1/api/shop/signup
+Content-Type: application/json
+
+{
+    "name": "Shop TIPS",
+    "email": "shoptipjs@gmail.com",
+    "password": "abc123"
+}
