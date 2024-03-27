@@ -4,6 +4,7 @@ const express = require('express')
 const { default: helmet } = require('helmet')
 const morgan = require('morgan')
 const app = express()
+const bodyParser = require('body-parser')
 
 //int middlewares
 app.use(morgan("dev"))
@@ -13,6 +14,7 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended: true
 }))
+app.use(bodyParser.json())
 
 
 //init db
